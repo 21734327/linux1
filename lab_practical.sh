@@ -30,21 +30,21 @@ useradd -g telc -G users bureshpatty   -c "Buresh, Patty"
 useradd -g telc -G users skeltonred    -c "Skelton, Red"
 useradd -g telc -G users ricocoricky   -c "Ricoco, Ricky"
 useradd -g telc -G users handlerrobin  -c "Handler, Robin"
-echo 123456 | passwd -stdin nasanovaoscar
-echo 123456 | passwd -stdin noilhanjoe   
-echo 123456 | passwd -stdin polcherjamie 
-echo 123456 | passwd -stdin shmakinandy  
-echo 123456 | passwd -stdin vandammjean  
-echo 123456 | passwd -stdin hendersonjody
-echo 123456 | passwd -stdin walkerjohnny 
-echo 123456 | passwd -stdin wenxuekerr   
-echo 123456 | passwd -stdin pavlickris   
-echo 123456 | passwd -stdin cokalee      
-echo 123456 | passwd -stdin johnsonpat   
-echo 123456 | passwd -stdin bureshpatty  
-echo 123456 | passwd -stdin skeltonred   
-echo 123456 | passwd -stdin ricocoricky  
-echo 123456 | passwd -stdin handlerrobin 
+echo 123456 | passwd --stdin nasanovaoscar
+echo 123456 | passwd --stdin noilhanjoe   
+echo 123456 | passwd --stdin polcherjamie 
+echo 123456 | passwd --stdin shmakinandy  
+echo 123456 | passwd --stdin vandammjean  
+echo 123456 | passwd --stdin hendersonjody
+echo 123456 | passwd --stdin walkerjohnny 
+echo 123456 | passwd --stdin wenxuekerr   
+echo 123456 | passwd --stdin pavlickris   
+echo 123456 | passwd --stdin cokalee      
+echo 123456 | passwd --stdin johnsonpat   
+echo 123456 | passwd --stdin bureshpatty  
+echo 123456 | passwd --stdin skeltonred   
+echo 123456 | passwd --stdin ricocoricky  
+echo 123456 | passwd --stdin handlerrobin 
 
 mkdir /home/public
 mkdir /home/public/huma
@@ -103,7 +103,7 @@ usermod -e 2019-04-01 skeltonred
 groupadd proj01
 mkdir /home/private/proj01
 chown :proj01 /home/private/proj01
-chmod 770 /hom/private/proj01
+chmod 770 /home/private/proj01
 usermod -aG proj01,publ shmakinandy
 usermod -aG proj01 hendersonjody -e 2019-04-28
 
@@ -121,12 +121,12 @@ chmod 775 /home/shared/tran
 useradd -g tran -G users kenesalpaul -c "Kenesal, Paul"  
 useradd -g tran -G users ferrarivick -c "Ferrari Vick"  
 useradd -g tran -G users wendalgary  -c "Wendal, Gary"  
-echo 123456 | passwd -stdin kenesalpaul
-echo 123456 | passwd -stdin ferrarivick
-echo 123456 | passwd -stdin wendalgary 
+echo 123456 | passwd --stdin kenesalpaul
+echo 123456 | passwd --stdin ferrarivick
+echo 123456 | passwd --stdin wendalgary 
 
 useradd -g telc -G users colourscyan -c "Cyan, Colours"
-echo 123456 | passwd -stdin colourscyan
+echo 123456 | passwd --stdin colourscyan
 mkdir /home/colourscyan/skelton
 cp -r /home/skeltonred /home/colourscyan/skelton
 
@@ -147,4 +147,4 @@ chmod 770 /home/private/temp
 chmod 775 /home/shared/temp
 
 useradd -g temp -G users mantellamicky -c "Mantella, Micky"  
-echo 123456 | passwd -stdin mantellamicky 
+echo 123456 | passwd --stdin mantellamicky 
