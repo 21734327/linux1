@@ -6,8 +6,8 @@
 
 mkdir /etc/skel/home
 mkdir /etc/skel/work
-wget ftp://172.31.1.16/policy.pdf /etc/skel/policy.pdf
-wget ftp://172.31.1.16/welcome.pdf /etc/skel/welcome.pdf
+wget ftp://172.31.1.16/policy.pdf -P /etc/skel/
+wget ftp://172.31.1.16/welcome.pdf -P /etc/skel/
 
 groupadd users
 groupadd huma
