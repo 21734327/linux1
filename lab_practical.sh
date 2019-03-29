@@ -88,7 +88,7 @@ chmod 777 /home/share/publ
 chmod 777 /home/share/stud
 chmod 777 /home/share/telc
 
-usermod -l palvickris
+usermod -L palvickris
 
 groupadd proj00
 mkdir /home/private/proj00
