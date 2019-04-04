@@ -2,6 +2,7 @@
 
 #####################################################
 ### remember to modify limits.conf and login.defs ###
+### remember to modify motd                       ###
 #####################################################
 
 mkdir /etc/skel/home
