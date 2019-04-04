@@ -146,5 +146,5 @@ chmod 777 /home/public/temp
 chmod 770 /home/private/temp
 chmod 775 /home/shared/temp
 
-useradd -g temp -G users mantellamicky -c "Mantella, Micky"  
+useradd -g temp -G users mantellamicky -c "Mantella, Micky" -e 2019-04-28
 echo 123456 | passwd --stdin mantellamicky 
