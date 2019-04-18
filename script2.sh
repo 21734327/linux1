@@ -3,6 +3,7 @@
 #version: 1.0
 #purpose: add a user
 #created: 2019/04/11
+#creator: nathanial krueger
 
 while : ; do
 
