@@ -2,7 +2,7 @@
 #name: create-group
 #version: 1.0
 #purpose: create groups
-#created: 2019/04/11
+#created: 2019/04/18
 
 mkdir /home/public
 mkdir /home/private
