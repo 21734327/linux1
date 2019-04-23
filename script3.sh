@@ -17,4 +17,4 @@ addgroup=`grep $username /etc/group | cut -d ":" -f 1 | tr [:space:] [,]`
 
 echo "User $username has a UID of $userid and a GID of $groupid."
 echo "User $username has an initial group of $igroup."
-echo "User $username is in the following additional groups: ${addgroup%?}."
+echo "User $username is in the following additional groups: ${addgroup%,}."
