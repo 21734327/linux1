@@ -5,11 +5,11 @@
 #created: 2019/04/23
 #creator: nathanial krueger
 
-wordlist="/opt/wordlist"
+wordfile="/opt/wordlist"
 badwords=""
 while IFS= read -r word
 do
 badwords="$badwords\b$word\b|"
-done < "$input"
+done < "$wordfile"
 badwords=${badwords%\|}
 echo $badwords
