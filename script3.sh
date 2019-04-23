@@ -8,7 +8,7 @@ echo "enter username"
 read username
 username=${username,,}
 
-userline=`grep $usernamename /etc/passwd`
+userline=`grep $username /etc/passwd`
 userid=`echo $userline | cut -d ":" -f 3`
 groupid=`echo $userline | cut -d ":" -f 4`
 
@@ -16,5 +16,5 @@ igroup=`grep $groupid /etc/group | cut -d ":" -f 1`
 addgroup=`grep $username /etc/group | cut -d ":" -f 1 | tr [:space:] [,]`
 
 echo "User $username has a UID of $userid and a GID of $groupid."
-echo "User $username has an initial group have of $igroup."
+echo "User $username has an initial group of $igroup."
 echo "User $username is in the following additional groups: ${addgroup%?}."
