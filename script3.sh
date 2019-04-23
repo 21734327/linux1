@@ -3,6 +3,7 @@
 #version: 1.0
 #purpose: get info of a system user
 #created: 2019/04/18
+#creator: nathanial krueger
 
 echo "enter username"
 read username
