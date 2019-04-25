@@ -18,9 +18,9 @@ read igroup
 igroup=${igroup,,}
 echo "additional group"
 read addgroup
-addgroup = ${addgroup,,}
+addgroup=${addgroup,,}
 
-uname=$( echo $lname |cut -c 1-5 ) $( echo $fname | cut -c 1 )
+uname=`echo $lname | cut -c 1-5``echo $fname | cut -c 1`
 
 useradd $uname -g $igroup -G $addgroup -c "${fname^^} ${lname^^}"
 echo 123456 | passwd --stdin $uname
@@ -28,7 +28,7 @@ echo 123456 | passwd --stdin $uname
 echo "run again?"
 read yn
 yn=$( echo ${yn,} | cut -c 1 )
-clear
+
 if [ "$yn" != "y" ]; then break
 fi
 done
